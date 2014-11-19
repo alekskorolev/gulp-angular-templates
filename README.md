@@ -35,7 +35,7 @@ Type `Boolean`
 
 Indicate whether the module name that was specified using ```options.module``` is intended to be standalone.
 
-#### options.withBroserify
+#### options.withBrowserify
 Type: `Boolean`
 
 Set this option `true`, if you compile project with browserify.
