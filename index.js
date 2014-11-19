@@ -61,7 +61,7 @@ function compile_html (file, opts) {
   });
 
   var result = "angular.module('"+opts.module+"'"+(opts.standalone?'[]':'')+").run(['$templateCache', function($templateCache) {\n" + compiled_templates.join('\n') + "\n}]);";
-
+	if (opts.withBroserify) result = "module.exports = function (angular) {" + result + "};";
   return result;
 };
 
